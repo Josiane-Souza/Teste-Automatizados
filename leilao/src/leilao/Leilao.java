@@ -8,6 +8,7 @@ import java.util.List;
 public class Leilao {
     private String descricao;
     private List<Lance> lances;
+    private Calendar data;
     
     public Leilao(String descricao) {
         this.descricao = descricao;
@@ -24,7 +25,11 @@ public class Leilao {
     }   
 
     Calendar getData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.data;
+    }
+    
+    public void setData(Calendar data) {
+        this.data = data;
     }
 
     void encerra() {
@@ -35,4 +40,5 @@ public class Leilao {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    
 }

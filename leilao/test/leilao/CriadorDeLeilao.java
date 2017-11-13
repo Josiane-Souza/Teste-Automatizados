@@ -22,7 +22,8 @@ public class CriadorDeLeilao {
         return leilao;
     }
 
-    Object naData(Calendar antiga) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public CriadorDeLeilao naData(Calendar antiga) {
+        leilao.setData(antiga);
+        return this;
     }
 }
