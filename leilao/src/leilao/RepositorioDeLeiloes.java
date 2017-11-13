@@ -2,14 +2,10 @@ package leilao;
 
 import java.util.List;
 
-class RepositorioDeLeiloes {
+public abstract class RepositorioDeLeiloes {
 
-    void atualiza(Leilao leilao) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public abstract void atualiza(Leilao leilao) ;
 
-    List<Leilao> correntes() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public abstract List<Leilao> correntes();
 
 }
