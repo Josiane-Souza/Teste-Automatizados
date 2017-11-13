@@ -2,9 +2,10 @@ package leilao;
 
 public class Usuario {
 
-    private Object lances;
+    private String nome;
 
-    public Usuario(String joao) {
+    public Usuario(String nome) {
+        this.nome = nome;
     }
 //    private Lance ultimoLanceDado() {
 //        return lances.get(lances.size()-1);
