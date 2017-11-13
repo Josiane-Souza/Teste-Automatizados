@@ -25,8 +25,8 @@ public class Avaliador{
                 menorDeTodos = lance.getValor();
             }
         }
-        //pegaOsMaioresNo(leilao);
-        tresMaiores(leilao);
+        pegaOsMaioresNo(leilao);
+//        tresMaiores(leilao);
     }
     
     private void pegaOsMaioresNo(Leilao leilao) {
@@ -43,17 +43,17 @@ public class Avaliador{
         public List<Lance> getTresMaiores() {
             return this.maiores;
         }
-        public double getMaiorLance() {
-            return maiorDeTodos;
-        }
-        public double getMenorLance() {
-            return menorDeTodos;
-        }
-
-    private void tresMaiores(Leilao leilao) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    }
+//        public double getMaiorLance() {
+//            return maiorDeTodos;
+//        }
+//        public double getMenorLance() {
+//            return menorDeTodos;
+//        }
+//
+//    private void tresMaiores(Leilao leilao) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//    }
 
     public double getMaiorLance() { return maiorDeTodos; }
     public double getMenorLance() { return menorDeTodos; }
