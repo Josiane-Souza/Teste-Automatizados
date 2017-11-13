@@ -6,6 +6,9 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class EncerradorDeLeilaoTest {
  
@@ -44,13 +47,13 @@ public class EncerradorDeLeilaoTest {
         when(daoFalso.correntes()).thenReturn(Arrays.asList(leilao1));
         
         Carteiro carteiroFalso = mock(Carteiro.class);
-        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso, carteiroF);
+        EncerradorDeLeilao encerrador = new EncerradorDeLeilao(daoFalso, carteiroFalso);
         encerrador.encerra();
         // verificando que o método atualiza foi realmente invocado!
         verify(daoFalso).atualiza(leilao1);
     }
 
-    private Carteiro mock(Class<Carteiro> aClass) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+//    private Carteiro mock(Class<Carteiro> aClass) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
 }

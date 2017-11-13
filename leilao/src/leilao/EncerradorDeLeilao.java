@@ -13,6 +13,10 @@ public class EncerradorDeLeilao {
         // guardamos o carteiro como atributo da classe
         this.carteiro = carteiro;
     }
+
+    EncerradorDeLeilao(LeilaoDao daoFalso) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public void encerra(){
         List<Leilao> todosLeiloesCorrentes = dao.correntes();
@@ -48,6 +52,10 @@ public class EncerradorDeLeilao {
     }
     public int getTotalEncerrados() {
         return total;
+    }
+
+    Object getQuantidadeDeEncerrados() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

@@ -4,6 +4,10 @@ import java.util.Calendar;
 import java.util.List;
 
 public class LeilaoDao {
+
+    public List<Leilao> correntes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 //    LeilaoDao daoFalso = mock(LeilaoDao.class);
 //    
 //    Calendar antiga = Calendar.getInstance();
