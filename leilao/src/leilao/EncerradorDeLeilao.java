@@ -3,10 +3,6 @@ package leilao;
 import java.util.Calendar;
 import java.util.List;
 
-public interface Carteiro {
-    void envia(Leilao leilao);
-}
-
 public class EncerradorDeLeilao {
     private int total = 0;
     private final RepositorioDeLeiloes dao;
